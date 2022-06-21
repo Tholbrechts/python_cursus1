@@ -1,5 +1,5 @@
 
-text = input("entrer une chaine de la forme (email pseudo motdepasse)").split(" ")
+text = input("entrer une chaine de la forme (email pseudo motdepasse)").split("/")
 
 print(text)
 
