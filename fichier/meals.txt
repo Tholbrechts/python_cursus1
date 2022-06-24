@@ -1,0 +1,7 @@
+burger
+pizza
+pates
+turc
+bowl
+sushi
+nouille
