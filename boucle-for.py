@@ -8,3 +8,5 @@ for email in emails:
         print("email {} interdit! envoi impossible...".format(email))
         continue
     print("email envoyé à: ", email)
+
+
