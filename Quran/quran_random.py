@@ -5,141 +5,359 @@ rd = random.randint
 
 import random
 
-surah = rd(1, 4)
-fatiha = rd(1, 7)
-baqara = rd(1, 286)
-imran = rd(1, 200)
-nisa = rd(1, 176)
-maidah = rd(1, 120)
-anam = rd(1, 165)
-araf = rd(1, 206)
-anfal = rd(1, 75)
-tawbah = rd(1, 129)
-yunus = rd(1, 109)
-hud = rd(1, 123)
-yusuf = rd(1, 111)
-raad = rd(1, 43)
-ibrahim = rd(1, 52)
-hijr = rd(1, 99)
-nahl = rd(1, 128)
-isra = rd(1, 111)
-kahf = rd(1, 110)
-maryam = rd(1, 98)
-taha = rd(1, 135)
-anbiya = rd(1, 112)
-hajj = rd(1, 78)
-muminune = rd(1, 118)
-nur = rd(1, 64)
-furqane = rd(1, 77)
-shuaraa = rd(1, 227)
-naml = rd(1, 93)
-qasas = rd(1, 88)
-ankabut = rd(1, 69)
-rum = rd(1, 60)
-luqman = rd(1, 34)
-sajda = rd(1, 30)
-azhab = rd(1, 73)
-saba = rd(1, 54)
-fatir = rd(1, 45)
-yassine = rd(1, 83)
-saffat = rd(1, 182)
-sad = rd(1, 88)
-zumar = rd(1, 75)
-gafir = rd(1, 85)
-fussilat = rd(1, 54)
-shura = rd(1, 53)
-azzukhruf = rd(1, 89)
-dukhan = rd(1, 59)
-jathya = rd(1, 37)
-Ahqaf = rd(1, 35)
-Muhammad = rd(1, 38)
-Fath = rd(1, 29)
-hujurat = rd(1, 18)
-qaf = rd(1, 45)
-Dzariyah = rd(1, 60)
-tur = rd(1, 49)
-najm = rd(1, 62)
-qamar = rd(1, 55)
-rahman = rd(1, 78)
-waqiah = rd(1, 96)
-hadid = rd(1, 29)
-mujadilah = rd(1, 22)
-hashr = rd(1, 24)
-mumtahannah = rd(1, 13)
-saf = rd(1, 14)
-jumuah = rd(1, 11)
-munafiqun = rd(1, 11)
-taghabun = rd(1, 18)
-talaq = rd(1, 12)
-tahrim = rd(1, 12)
-mulk = rd(1, 30)
-qalam = rd(1, 52)
-haqqah = rd(1, 52)
-maarij = rd(1, 44)
-nuf = rd(1, 28)
-jinn = rd(1, 28)
-muzammil = rd(1, 10)
-mudaththir = rd(1, 56)
-qiyamah = rd(1, 40)
-insan = rd(1, 31)
-mursalate = rd(1, )
-naba = rd(1, )
-naziate = rd(1, )
-abasa = rd(1, )
-takwir = rd(1, )
-infitar = rd(1, )
-mutaffifin = rd(1, )
-insiqaq = rd(1, )
-buruj = rd(1, )
-tariq = rd(1, )
-ala = rd(1, )
-gasiyah = rd(1, )
-fajr = rd(1, )
-balad = rd(1, )
-chams = rd(1, )
-layl = rd(1, )
-duha = rd(1, )
-sarh = rd(1, )
-tin = rd(1, )
-alaq = rd(1, )
-qadr = rd(1, )
-bayyinah = rd(1, )
-zalzalah = rd(1, )
-adiyate = rd(1, )
-qariah = rd(1, )
-takatur = rd(1, )
-asr = rd(1, )
-humazah = rd(1, )
-fil = rd(1, )
-coraish = rd(1, )
-maun = rd(1, )
-kawtar = rd(1, )
-kafirune = rd(1, )
-nasr = rd(1, )
-masad = rd(1, )
-ikhlas = rd(1, )
-falaq = rd(1, )
-nas = rd(1, )
-print(surah)
-print(fatiha)
-print(baqara)
-print(imran)
-print(nisa)
 
-if surah == 1:
-    print(Q.getAyah(surah, fatiha, "en.sahih")["verse"])
-    print("surat ", surah, "aya ", fatiha)
-elif surah == 2:
-    print(Q.getAyah(surah, baqara, "en.sahih")["verse"])
-    print("surat ", surah, "aya ", baqara)
-elif surah == 3:
-    print(Q.getAyah(surah, imran, "en.sahih")["verse"])
-    print("surat ", surah, "aya ", imran)
-elif surah == 4:
-    print(Q.getAyah(surah, nisa, "en.sahih")["verse"])
-    print("surat ", surah, "aya ", nisa)
-else:
-    print("erreur")
+
+def quran() -> object:
+    surah = rd(1, 114)
+    fatiha = rd(1, 7)
+    baqara = rd(1, 286)
+    imran = rd(1, 200)
+    nisa = rd(1, 176)
+    maidah = rd(1, 120)
+    anam = rd(1, 165)
+    araf = rd(1, 206)
+    anfal = rd(1, 75)
+    tawbah = rd(1, 129)
+    yunus = rd(1, 109)
+    hud = rd(1, 123)
+    yusuf = rd(1, 111)
+    raad = rd(1, 43)
+    ibrahim = rd(1, 52)
+    hijr = rd(1, 99)
+    nahl = rd(1, 128)
+    isra = rd(1, 111)
+    kahf = rd(1, 110)
+    maryam = rd(1, 98)
+    taha = rd(1, 135)
+    anbiya = rd(1, 112)
+    hajj = rd(1, 78)
+    muminune = rd(1, 118)
+    nur = rd(1, 64)
+    furqane = rd(1, 77)
+    shuaraa = rd(1, 227)
+    naml = rd(1, 93)
+    qasas = rd(1, 88)
+    ankabut = rd(1, 69)
+    rum = rd(1, 60)
+    luqman = rd(1, 34)
+    sajda = rd(1, 30)
+    azhab = rd(1, 73)
+    saba = rd(1, 54)
+    fatir = rd(1, 45)
+    yassine = rd(1, 83)
+    saffat = rd(1, 182)
+    sad = rd(1, 88)
+    zumar = rd(1, 75)
+    gafir = rd(1, 85)
+    fussilat = rd(1, 54)
+    shura = rd(1, 53)
+    azzukhruf = rd(1, 89)
+    dukhan = rd(1, 59)
+    jathya = rd(1, 37)
+    ahqaf = rd(1, 35)
+    Muhammad = rd(1, 38)
+    fath = rd(1, 29)
+    hujurat = rd(1, 18)
+    qaf = rd(1, 45)
+    dariyat = rd(1, 60)
+    tur = rd(1, 49)
+    najm = rd(1, 62)
+    qamar = rd(1, 55)
+    rahman = rd(1, 78)
+    waqiah = rd(1, 96)
+    hadid = rd(1, 29)
+    mujadilah = rd(1, 22)
+    hashr = rd(1, 24)
+    mumtahannah = rd(1, 13)
+    saf = rd(1, 14)
+    jumuah = rd(1, 11)
+    munafiqun = rd(1, 11)
+    taghabun = rd(1, 18)
+    talaq = rd(1, 12)
+    tahrim = rd(1, 12)
+    mulk = rd(1, 30)
+    qalam = rd(1, 52)
+    haqqah = rd(1, 52)
+    maarij = rd(1, 44)
+    nuh = rd(1, 28)
+    jinn = rd(1, 28)
+    muzammil = rd(1, 10)
+    mudaththir = rd(1, 56)
+    qiyamah = rd(1, 40)
+    insan = rd(1, 31)
+    mursalate = rd(1, 50)
+    naba = rd(1, 40)
+    naziate = rd(1, 46)
+    abasa = rd(1, 42)
+    takwir = rd(1, 29)
+    infitar = rd(1, 19)
+    mutaffifin = rd(1, 36)
+    insiqaq = rd(1, 25)
+    buruj = rd(1, 22)
+    tariq = rd(1, 17)
+    ala = rd(1, 18)
+    gasiyah = rd(1, 26)
+    fajr = rd(1, 30)
+    balad = rd(1, 20)
+    chams = rd(1, 15)
+    layl = rd(1, 21)
+    duha = rd(1, 11)
+    sarh = rd(1, 8)
+    tin = rd(1, 8)
+    alaq = rd(1, 19)
+    qadr = rd(1, 5)
+    bayyinah = rd(1, 8)
+    zalzalah = rd(1, 8)
+    adiyate = rd(1, 11)
+    qariah = rd(1, 11)
+    takatur = rd(1, 8)
+    asr = rd(1, 3)
+    humazah = rd(1, 9)
+    fil = rd(1, 5)
+    coraish = rd(1, 4)
+    maun = rd(1, 7)
+    kawtar = rd(1, 3)
+    kafirune = rd(1, 6)
+    nasr = rd(1, 3)
+    masad = rd(1, 5)
+    ikhlas = rd(1, 4)
+    falaq = rd(1, 5)
+    nas = rd(1, 6)
+
+
+
+    if surah == 1:
+        return (Q.getAyah(surah, fatiha, "en.sahih")["verse"])
+    elif surah == 2:
+        return (Q.getAyah(surah, baqara, "en.sahih")["verse"])
+    elif surah == 3:
+        return (Q.getAyah(surah, imran, "en.sahih")["verse"])
+    elif surah == 4:
+        return (Q.getAyah(surah, nisa, "en.sahih")["verse"])
+    elif surah == 5:
+        return (Q.getAyah(surah, maidah, "en.sahih")["verse"])
+    elif surah == 6:
+        return (Q.getAyah(surah, anam, "en.sahih")["verse"])
+    elif surah == 7:
+        return (Q.getAyah(surah, araf, "en.sahih")["verse"])
+    elif surah == 8:
+        return (Q.getAyah(surah, anfal, "en.sahih")["verse"])
+    elif surah == 9:
+        return (Q.getAyah(surah, tawbah, "en.sahih")["verse"])
+    elif surah == 10:
+        return (Q.getAyah(surah, yunus, "en.sahih")["verse"])
+    elif surah == 11:
+        return (Q.getAyah(surah, hud, "en.sahih")["verse"])
+    elif surah == 12:
+        return (Q.getAyah(surah, yusuf, "en.sahih")["verse"])
+    elif surah == 13:
+        return (Q.getAyah(surah, raad, "en.sahih")["verse"])
+    elif surah == 14:
+        return (Q.getAyah(surah, ibrahim, "en.sahih")["verse"])
+    elif surah == 15:
+        return (Q.getAyah(surah, hijr, "en.sahih")["verse"])
+    elif surah == 16:
+        return (Q.getAyah(surah, nahl, "en.sahih")["verse"])
+    elif surah == 17:
+        return (Q.getAyah(surah, isra, "en.sahih")["verse"])
+    elif surah == 18:
+        return (Q.getAyah(surah, kahf, "en.sahih")["verse"])
+    elif surah == 19:
+        return (Q.getAyah(surah, maryam, "en.sahih")["verse"])
+    elif surah == 20:
+        return (Q.getAyah(surah, taha, "en.sahih")["verse"])
+    elif surah == 21:
+        return (Q.getAyah(surah, anbiya, "en.sahih")["verse"])
+    elif surah == 22:
+        return (Q.getAyah(surah, hajj, "en.sahih")["verse"])
+    elif surah == 23:
+        return (Q.getAyah(surah, muminune, "en.sahih")["verse"])
+    elif surah == 24:
+        return (Q.getAyah(surah, nur, "en.sahih")["verse"])
+    elif surah == 25:
+        return (Q.getAyah(surah, furqane, "en.sahih")["verse"])
+    elif surah == 26:
+        return (Q.getAyah(surah, shuaraa, "en.sahih")["verse"])
+    elif surah == 27:
+        return (Q.getAyah(surah, naml, "en.sahih")["verse"])
+    elif surah == 28:
+        return (Q.getAyah(surah, qasas, "en.sahih")["verse"])
+    elif surah == 29:
+        return (Q.getAyah(surah, ankabut, "en.sahih")["verse"])
+    elif surah == 30:
+        return (Q.getAyah(surah, rum, "en.sahih")["verse"])
+    elif surah == 31:
+        return (Q.getAyah(surah, luqman, "en.sahih")["verse"])
+    elif surah == 32:
+        return (Q.getAyah(surah, sajda, "en.sahih")["verse"])
+    elif surah == 33:
+        return (Q.getAyah(surah, azhab, "en.sahih")["verse"])
+    elif surah == 34:
+        return (Q.getAyah(surah, saba, "en.sahih")["verse"])
+    elif surah == 35:
+        return (Q.getAyah(surah, fatir, "en.sahih")["verse"])
+    elif surah == 36:
+        return (Q.getAyah(surah, yassine, "en.sahih")["verse"])
+    elif surah == 37:
+        return (Q.getAyah(surah, saffat, "en.sahih")["verse"])
+    elif surah == 38:
+        return (Q.getAyah(surah, sad, "en.sahih")["verse"])
+    elif surah == 39:
+        return (Q.getAyah(surah, zumar, "en.sahih")["verse"])
+    elif surah == 40:
+        return (Q.getAyah(surah, gafir, "en.sahih")["verse"])
+    elif surah == 41:
+        return (Q.getAyah(surah, fussilat, "en.sahih")["verse"])
+    elif surah == 42:
+        return (Q.getAyah(surah, shura, "en.sahih")["verse"])
+    elif surah == 43:
+        return (Q.getAyah(surah, azzukhruf, "en.sahih")["verse"])
+    elif surah == 44:
+        return (Q.getAyah(surah, dukhan, "en.sahih")["verse"])
+    elif surah == 45:
+        return (Q.getAyah(surah, jathya, "en.sahih")["verse"])
+    elif surah == 46:
+        return (Q.getAyah(surah, ahqaf, "en.sahih")["verse"])
+    elif surah == 47:
+        return (Q.getAyah(surah, Muhammad, "en.sahih")["verse"])
+    elif surah == 48:
+        return (Q.getAyah(surah, fath, "en.sahih")["verse"])
+    elif surah == 49:
+        return (Q.getAyah(surah, hujurat, "en.sahih")["verse"])
+    elif surah == 50:
+        return (Q.getAyah(surah, qaf, "en.sahih")["verse"])
+    elif surah == 51:
+        return (Q.getAyah(surah, dariyat, "en.sahih")["verse"])
+    elif surah == 52:
+        return (Q.getAyah(surah, tur, "en.sahih")["verse"])
+    elif surah == 53:
+        return (Q.getAyah(surah, najm, "en.sahih")["verse"])
+    elif surah == 54:
+        return (Q.getAyah(surah, qamar, "en.sahih")["verse"])
+
+    elif surah == 55:
+        return (Q.getAyah(surah, rahman, "en.sahih")["verse"])
+
+    elif surah == 56:
+        return (Q.getAyah(surah, waqiah, "en.sahih")["verse"])
+    elif surah == 57:
+        return (Q.getAyah(surah, hadid, "en.sahih")["verse"])
+    elif surah == 58:
+        return (Q.getAyah(surah, mujadilah, "en.sahih")["verse"])
+    elif surah == 59:
+        return (Q.getAyah(surah, hashr, "en.sahih")["verse"])
+    elif surah == 60:
+        return (Q.getAyah(surah, mumtahannah, "en.sahih")["verse"])
+    elif surah == 61:
+        return (Q.getAyah(surah, saf, "en.sahih")["verse"])
+    elif surah == 62:
+        return (Q.getAyah(surah, jumuah, "en.sahih")["verse"])
+    elif surah == 63:
+        return (Q.getAyah(surah, munafiqun, "en.sahih")["verse"])
+    elif surah == 64:
+        return (Q.getAyah(surah, taghabun, "en.sahih")["verse"])
+    elif surah == 65:
+        return (Q.getAyah(surah, talaq, "en.sahih")["verse"])
+    elif surah == 66:
+        return (Q.getAyah(surah, tahrim, "en.sahih")["verse"])
+    elif surah == 67:
+        return (Q.getAyah(surah, mulk, "en.sahih")["verse"])
+    elif surah == 68:
+        return (Q.getAyah(surah, qalam, "en.sahih")["verse"])
+    elif surah == 69:
+        return (Q.getAyah(surah, haqqah, "en.sahih")["verse"])
+    elif surah == 70:
+        return (Q.getAyah(surah, maarij, "en.sahih")["verse"])
+    elif surah == 71:
+        return (Q.getAyah(surah, nuh, "en.sahih")["verse"])
+    elif surah == 72:
+        return (Q.getAyah(surah, jinn, "en.sahih")["verse"])
+    elif surah == 73:
+        return (Q.getAyah(surah, muzammil, "en.sahih")["verse"])
+    elif surah == 74:
+        return (Q.getAyah(surah, mudaththir, "en.sahih")["verse"])
+    elif surah == 75:
+        return (Q.getAyah(surah, qiyamah, "en.sahih")["verse"])
+    elif surah == 76:
+        return (Q.getAyah(surah, insan, "en.sahih")["verse"])
+    elif surah == 77:
+        return (Q.getAyah(surah, mursalate, "en.sahih")["verse"])
+    elif surah == 78:
+        return (Q.getAyah(surah, naba, "en.sahih")["verse"])
+    elif surah == 79:
+        return (Q.getAyah(surah, naziate, "en.sahih")["verse"])
+    elif surah == 80:
+        return (Q.getAyah(surah, abasa, "en.sahih")["verse"])
+    elif surah == 81:
+        return (Q.getAyah(surah, takwir, "en.sahih")["verse"])
+    elif surah == 82:
+        return (Q.getAyah(surah, infitar, "en.sahih")["verse"])
+    elif surah == 83:
+        return (Q.getAyah(surah, mutaffifin, "en.sahih")["verse"])
+    elif surah == 84:
+        return (Q.getAyah(surah, insiqaq, "en.sahih")["verse"])
+    elif surah == 85:
+        return (Q.getAyah(surah, buruj, "en.sahih")["verse"])
+    elif surah == 86:
+        return (Q.getAyah(surah, tariq, "en.sahih")["verse"])
+    elif surah == 87:
+        return (Q.getAyah(surah, ala, "en.sahih")["verse"])
+    elif surah == 88:
+        return (Q.getAyah(surah, gasiyah, "en.sahih")["verse"])
+    elif surah == 89:
+        return (Q.getAyah(surah, fajr, "en.sahih")["verse"])
+    elif surah == 90:
+        return (Q.getAyah(surah, balad, "en.sahih")["verse"])
+    elif surah == 91:
+        return (Q.getAyah(surah, chams, "en.sahih")["verse"])
+    elif surah == 92:
+        return (Q.getAyah(surah, layl, "en.sahih")["verse"])
+    elif surah == 93:
+        return (Q.getAyah(surah, duha, "en.sahih")["verse"])
+    elif surah == 94:
+        return (Q.getAyah(surah, sarh, "en.sahih")["verse"])
+    elif surah == 95:
+        return (Q.getAyah(surah, tin, "en.sahih")["verse"])
+    elif surah == 96:
+        return (Q.getAyah(surah, alaq, "en.sahih")["verse"])
+    elif surah == 97:
+        return (Q.getAyah(surah, qadr, "en.sahih")["verse"])
+    elif surah == 98:
+        return (Q.getAyah(surah, bayyinah, "en.sahih")["verse"])
+    elif surah == 99:
+        return (Q.getAyah(surah, zalzalah, "en.sahih")["verse"])
+    elif surah == 100:
+        return (Q.getAyah(surah, adiyate, "en.sahih")["verse"])
+    elif surah == 101:
+        return (Q.getAyah(surah, qariah, "en.sahih")["verse"])
+    elif surah == 102:
+        return (Q.getAyah(surah, takatur, "en.sahih")["verse"])
+    elif surah == 103:
+        return (Q.getAyah(surah, asr, "en.sahih")["verse"])
+    elif surah == 104:
+        return (Q.getAyah(surah, humazah, "en.sahih")["verse"])
+    elif surah == 105:
+        return (Q.getAyah(surah, fil, "en.sahih")["verse"])
+    elif surah == 106:
+        return (Q.getAyah(surah, coraish, "en.sahih")["verse"])
+    elif surah == 107:
+        return (Q.getAyah(surah, maun, "en.sahih")["verse"])
+    elif surah == 108:
+        return (Q.getAyah(surah, kawtar, "en.sahih")["verse"])
+    elif surah == 109:
+        return (Q.getAyah(surah, kafirune, "en.sahih")["verse"])
+    elif surah == 110:
+        return (Q.getAyah(surah, nasr, "en.sahih")["verse"])
+    elif surah == 111:
+        return (Q.getAyah(surah, masad, "en.sahih")["verse"])
+    elif surah == 112:
+        return (Q.getAyah(surah, ikhlas, "en.sahih")["verse"])
+    elif surah == 113:
+        return (Q.getAyah(surah, falaq, "en.sahih")["verse"])
+    elif surah == 114:
+        return (Q.getAyah(surah, humazah, "en.sahih")["verse"])
+    else:
+        return ("erreur")
 
 
 
